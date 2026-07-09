@@ -1,8 +1,8 @@
-# Robustness of PINNs for the 2D Laplace Equation
+# Robust PINN Reconstruction for 2D Laplace Heat Conduction
 
-This repository contains the code, report, and experiment outputs for a MATH3349 project evaluating how well Physics-Informed Neural Networks (PINNs) reconstruct a steady-state 2D temperature field governed by Laplace's equation when only sparse and noisy measurements are available.
+This repository contains a reproducible numerical study of Physics-Informed Neural Networks (PINNs) for reconstructing a steady-state two-dimensional temperature field governed by Laplace's equation from sparse, incomplete, and noisy observations.
 
-The central question is practical: if a full thermal boundary cannot be measured, can a PINN recover the whole temperature field from a small number of interior sensors, partial boundary data, and the physics constraint?
+The central question is an inverse-problem question: when full thermal boundary measurements are unavailable, can a PINN recover the latent temperature field using only a small number of interior sensors, optional partial boundary data, and the governing PDE residual?
 
 ## Experiment Overview
 
@@ -37,7 +37,7 @@ The experiments show that PINNs can reconstruct the temperature field accurately
 - In very low-noise cases, the no-boundary setup can sometimes perform better because it gives the model more flexibility and avoids an additional boundary-loss constraint.
 - The problem remains learnable because the true Laplace solution is smooth and low-complexity, so the PDE residual plus sparse sensor data provides a strong regularizing signal.
 
-These results suggest that PINNs are useful for thermal inverse problems where full boundary measurements are expensive, unavailable, or contaminated by noise.
+These results suggest that PINNs provide a useful mesh-free framework for thermal inverse problems where full boundary measurements are expensive, unavailable, or contaminated by noise.
 
 ## Repository Structure
 
