@@ -18,7 +18,7 @@ The PINN approximates the unknown temperature field by a neural network $u_\thet
 
 $$\mathcal{L}(\theta) = \mathcal{L}_{r}(\theta) + \mathcal{L}_{b}(\theta) + \mathcal{L}_{d}(\theta).$$
 
-where $\mathcal{L}_{r}$ enforces the Laplace residual, $\mathcal{L}_{b}$ enforces available boundary measurements, and $\mathcal{L}_{d}$ fits sparse interior sensor observations.
+Here, the residual term enforces the Laplace equation, the boundary term enforces available boundary measurements, and the data term fits sparse interior sensor observations.
 
 ## Project Pipeline
 
