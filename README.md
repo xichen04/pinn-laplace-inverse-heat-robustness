@@ -1,6 +1,6 @@
 # Physics-Informed Neural Networks for Robust Reconstruction of the 2D Laplace Equation
 
-This repository studies whether **Physics-Informed Neural Networks (PINNs)** can reconstruct a steady-state two-dimensional temperature field from sparse, incomplete, and noisy observations. The research question is whether a neural network can recover an entire temperature field from only sparse measurements while still satisfying the governing physical law. The experiment is framed as an inverse problem for the Laplace equation, using a finite-difference solution as ground truth and evaluating PINN reconstructions across sensor density, boundary-condition availability, and Gaussian measurement noise.
+This repository studies whether **Physics-Informed Neural Networks (PINNs)** can reconstruct a 2-dimensional Laplace temperature field from varying grid densities, boundary conditions, and noise levels.  The research question is whether a neural network can recover an entire incomplete-boundary temperature field from only sparse measurements of sensors. The experiment is framed as an inverse problem for the Laplace equation, using a finite difference method (FDM) to solve the forward problem to get ground truth, and evaluating PINN reconstructions across different sensor density, boundary conditions, and different Gaussian measurement noise level.
 
 ![Ground truth, PINN prediction, and absolute error under 10% noise](results/10x10/partial_10_10.png)
 
