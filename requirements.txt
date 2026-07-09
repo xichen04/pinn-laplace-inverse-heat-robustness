@@ -1,0 +1,9 @@
+jax
+jaxlib
+optax
+matplotlib
+numpy
+pandas
+dill
+git+https://github.com/dmarcondes/JINNAX
+git+https://github.com/dmarcondes/genree
